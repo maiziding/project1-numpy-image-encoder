@@ -1,0 +1,13 @@
+BCHW: (1, 1, 4, 4) patch rows: (1, 4, 4)
+[[-0.50  0.89 -0.30 -0.54]
+ [-0.62 -0.64  0.34 -0.77]
+ [ 0.79  0.72 -0.79 -0.48]
+ [-0.99  0.08 -0.17 -0.09]]
+Patch tokens: (1, 4, 3) 
+ [[-0.10 -0.24 -0.16]
+ [ 0.21  0.04  0.07]
+ [-0.08 -0.28 -0.14]
+ [-0.01 -0.12  0.05]]
+CLS + four patches + positions: (1, 5, 3)
+Next: Transformer blocks preserve (B,L,D).
+After all blocks: select CLS x[:,0,:], then apply post-Norm and projection.

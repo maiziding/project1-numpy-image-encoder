@@ -1,0 +1,15 @@
+A:
+ [[ 0.80 -0.60]
+ [-0.40 -0.50]]
+More rows:
+ [[ 0.80 -0.60]
+ [-0.40 -0.50]
+ [ 0.70  0.90]] (3, 2)
+More columns:
+ [[ 0.80 -0.60  0.70]
+ [-0.40 -0.50  0.90]] (2, 3)
+One image CHW: (3, 190, 280)
+Two images BCHW: (2, 3, 190, 280)
+Existing batches: (2, 3, 190, 280) + (1, 3, 190, 280) = (3, 3, 190, 280)
+Channel join (not a two-image batch): (6, 190, 280)
+stack needs equal input shapes: resize/crop before stacking.

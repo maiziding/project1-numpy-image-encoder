@@ -1,0 +1,82 @@
+[
+  {
+    "id": "image_01",
+    "path": "images/image_01.jpg",
+    "sha256": "bedc80b5c33450fd652e3d07c800d7c4426255225129da480433cdf996b6740e",
+    "source_article_id": "n24_01dd13ff-83c5-58ce-a321-018c6ae986e5",
+    "source_url": "https://www.nytimes.com/2018/10/04/arts/design/naomi-watts-show-us-your-wall.html",
+    "source_image_url": "https://static01.nyt.com/images/2018/10/05/arts/05showwall1/05showwall1-facebookJumbo.jpg?year=2018&h=550&w=1050&s=b999dbd233a07f2043f3595b60e10090e0f6062b3beb147140e8bce449d2eceb&k=ZQJBKqZ0VN"
+  },
+  {
+    "id": "image_02",
+    "path": "images/image_02.jpg",
+    "sha256": "6e9a326053b7907025a94a5874a7745e9aa6e90405ada71bc36e0a6b8a08627f",
+    "source_article_id": "n24_0001e992-dc11-5150-88f8-950f63d314c1",
+    "source_url": "https://www.nytimes.com/2019/07/02/dining/ice-cream-shops.html",
+    "source_image_url": "https://static01.nyt.com/images/2019/07/03/dining/02icecream11/02icecream11-facebookJumbo-v2.jpg?year=2019&h=550&w=1050&s=55379d359228f4fcb4043b0be46f70f35f461d489c10194311edbd2eff9f7106&k=ZQJBKqZ0VN"
+  },
+  {
+    "id": "image_03",
+    "path": "images/image_03.jpg",
+    "sha256": "ac91eaaf39383a07af3fc3086094c73714fcf68b4bef1183b47999567f1a5089",
+    "source_article_id": "n24_00bce0e8-553b-5136-ac37-6ee9b80a5d11",
+    "source_url": "https://www.nytimes.com/2016/07/09/health/mary-todd-lincoln-anemia-vitamin-b12.html",
+    "source_image_url": "https://static01.nyt.com/images/2016/07/08/science/12MARYTODD/12MARYTODD-facebookJumbo.jpg?year=2016&h=549&w=1050&s=f7ecd5c2ac99a0cbae8d6328fe3a0661cb2ded96e67f05b4322d52723b4ae671&k=ZQJBKqZ0VN"
+  },
+  {
+    "id": "image_04",
+    "path": "images/image_04.jpg",
+    "sha256": "20936cdd3deb7a673627f83898020841012aac46bf3a188a174f835d9ea7ead8",
+    "source_article_id": "n24_004e0475-5158-5a31-b045-b22dd52f5fbd",
+    "source_url": "https://www.nytimes.com/2018/01/31/fashion/maternity-fashion-millennial-pregnancy-hatch.html",
+    "source_image_url": "https://static01.nyt.com/images/2018/02/01/fashion/25critic1/25critic1-facebookJumbo.jpg?year=2018&h=550&w=1050&s=a8d86217ebe658b7d6d99ef2869e478030f53205ed619207c230206687b44f9b&k=ZQJBKqZ0VN"
+  },
+  {
+    "id": "image_05",
+    "path": "images/image_05.jpg",
+    "sha256": "dd1c00f16ea3d9ad6e2b9330a9b3442de84108b23d41a95126b416477c512e60",
+    "source_article_id": "n24_0765c4df-9090-5263-89d6-609b7c035f9d",
+    "source_url": "https://www.nytimes.com/2017/12/29/business/economy/airbnb-protect-environment.html",
+    "source_image_url": "https://static01.nyt.com/images/2017/12/31/business/31VIEW1/merlin_131241515_fac54f67-d9a6-4e32-90fd-2081131d3671-facebookJumbo.jpg?year=2017&h=549&w=1050&s=c3d14155d4e1cbe9c7d199e93ed7da5274cdb54131c406864ac15139ab924287&k=ZQJBKqZ0VN"
+  },
+  {
+    "id": "image_06",
+    "path": "images/image_06.jpg",
+    "sha256": "7ff106a0a3c31a45af710de995a826f2f69aab1d55369035bbf4fe952ab72e24",
+    "source_article_id": "n24_0008f3ae-3f53-53e7-8439-163c0024c186",
+    "source_url": "https://www.nytimes.com/2020/06/05/sports/the-athletic-layoffs.html",
+    "source_image_url": "https://static01.nyt.com/images/2020/06/05/sports/05athletic-layoffs-1/05athletic-layoffs-1-facebookJumbo.jpg?year=2020&h=549&w=1050&s=7c4d2a1c454b7309d2d0f54316d93d9bb356bbfdc09df900ff31fc42c82be19f&k=ZQJBKqZ0VN"
+  },
+  {
+    "id": "image_07",
+    "path": "images/image_07.jpg",
+    "sha256": "874f58b8b0704ee63427b1daf46517229dde6190daeed9f1c8f7622a7ee7510b",
+    "source_article_id": "n24_013f8125-c120-525a-89c1-e12d6ae07bc6",
+    "source_url": "https://www.nytimes.com/2014/08/16/automobiles/weekend-auto-calendar-pebble-pebble-everywhere.html",
+    "source_image_url": "https://static01.nyt.com/images/2014/08/16/automobiles/16WEEKEND-image/16WEEKEND-image-articleLarge.png?year=2014&h=438&w=600&s=4feee93ea74ff6a67ee72efe461f62d849aeccef36dc1c925d03030068037a8c&k=ZQJBKqZ0VN&tw=1"
+  },
+  {
+    "id": "image_08",
+    "path": "images/image_08.jpg",
+    "sha256": "5308f2e27e34a48fe880f655f39a32d6a70242b1c5bf2c91b35c75ca05810400",
+    "source_article_id": "n24_017ea726-ccc3-5ace-840d-11dac408bbea",
+    "source_url": "https://www.nytimes.com/2018/02/16/travel/chengdu-china-budget-affordable-food.html",
+    "source_image_url": "https://static01.nyt.com/images/2018/02/25/travel/25frugal-chengdu6/18frugal-chengdu6-facebookJumbo.jpg?year=2018&h=550&w=1050&s=b0793303296e0b8c0a197be4c4271de40cdb16a245f37d3e7acf875b44257313&k=ZQJBKqZ0VN"
+  },
+  {
+    "id": "image_09",
+    "path": "images/image_09.jpg",
+    "sha256": "b6a247787521abf9295dce1b7c091a55e250e24a49f438f9358458237466f121",
+    "source_article_id": "n24_020d509f-5f3d-5715-8d16-acafa9d4a034",
+    "source_url": "https://www.nytimes.com/2017/05/08/arts/design/met-museum-michelangelo-exhibition.html",
+    "source_image_url": "https://static01.nyt.com/images/2017/05/06/arts/08michelangelo/08michelangelo-facebookJumbo.jpg?year=2017&h=550&w=1050&s=746848a951ccc2ec2d728cd9c74502e4b5416c771e39cfb8602dfde172414cee&k=ZQJBKqZ0VN"
+  },
+  {
+    "id": "image_10",
+    "path": "images/image_10.jpg",
+    "sha256": "15c3c2210b61973f77a0e8095d30876193715500ce79a54b6bef9a5e8a1756f2",
+    "source_article_id": "n24_03abf0c4-9202-55fc-abf2-2e2f3427b322",
+    "source_url": "https://www.nytimes.com/2019/10/23/arts/design/museum-conservators-public.html",
+    "source_image_url": "https://static01.nyt.com/images/2019/10/27/multimedia/27sp-conserve-mfa/27sp-conserve-mfa-facebookJumbo.jpg?year=2019&h=550&w=1050&s=8dd491a14590709c2eef3fdcd7e0448386855dc71905b3ed9bce4f312a34f385&k=ZQJBKqZ0VN"
+  }
+]

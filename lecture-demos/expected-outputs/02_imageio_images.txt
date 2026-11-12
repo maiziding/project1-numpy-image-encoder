@@ -1,0 +1,11 @@
+RGB shape, dtype: (3, 190, 280) uint8
+Pixel [:,90,140]: [131  89  64]
+Red [0,90,140]: 131
+One-channel shape: (190, 280)
+Grayscale shape and corner: (190, 280) 202
+Crop: (3, 120, 160) Subsampled: (3, 95, 140)
+Float input range: 0.0 1.0
+Normalized CHW shape, dtype: (3, 190, 280) float32
+BCHW: (2, 3, 190, 280)
+CHW sum axis shapes: [(2, 3), (3, 3), (3, 2)]
+PNG outputs: lecture-demos/image-outputs

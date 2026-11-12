@@ -1,0 +1,148 @@
+PPT / STUDENT CODE MAP
+Current edition: 76 slides.
+
+Paths below are relative to project1-numpy unless stated otherwise. L numbers
+refer to the supplied, unedited starter. They move when students add code.
+For a TODO, the cited lines identify the assessed contract or blank; the slide
+formula illustrates the calculation to implement, not a completed starter line.
+
+Cubes represent arrays. Gray matrices represent supplied parameters.
+Arrows name operations. Array labels follow the Python variable names.
+Norm 2 output is named u in both the companion and assessed code.
+The companion transformer_steps.py is a 2D, three-token teaching example.
+The lecture uses full image-array shapes. Toy and learned parameters differ.
+
+LECTURE ROUTE
+1-2: image motivation and route map.
+3-8: represent arrays, values, axes, random arrays and 0D-5D shapes.
+9-18: arrange data, reshape/transpose, concatenate/stack and image batches.
+19-28: elementwise operations, dot/matrix products, reductions and broadcasting.
+29-38: images, numeric inputs, supplied parameters and a small MLP forward.
+39-45: image input, preprocessing, patches, projection, CLS and positions.
+46-51: Norm, token arrays and separate parameter instances.
+52-66: one Transformer block, both residuals and the sequence of blocks.
+67-70: select CLS, apply post-Norm, project and scale each output to unit length.
+71-73: complete encoder, six tasks, classroom files and numerical checks.
+74-76: reuse the image encoder, text token lookup and shared Transformer code.
+
+ARRAY AND IMAGE DEMOS
+4-7, 10-13, 20-27: lecture-demos/01_numpy_basics.py
+14-17: lecture-demos/04_join_arrays.py
+30-34: lecture-demos/02_imageio_images.py
+35-38: lecture-demos/03_forward_tokens.py
+These are classroom examples; the assessed encoder begins on slide 39.
+
+IMAGE INPUT AND TOKEN ROWS
+39 Image encoder task
+   run.py L15-17: load parameters, prepare images and call ImageEncoder.
+40 Image preparation
+   preprocess_image.py L5-34; check.py L85: supplied preprocessing check.
+41 Image preparation
+   preprocess_image.py L5-18: resize/crop; L20-34: CHW normalization and batch.
+42 Image patches
+   image_encoder.py L93-102: patchify / TODO-01.
+43 Patch axes
+   image_encoder.py L93-102: same patchify contract and patch-order convention.
+44 Patch projection
+   image_encoder.py L84: patch parameter layout; L104-108: embed / TODO-05a.
+45 CLS and positions
+   image_encoder.py L85-86: supplied CLS/positions; L110-115: TODO-05b.
+
+NORM AND MODEL PARAMETERS
+46 Norm
+   helpers.py L5-25: supplied LayerNorm calculation.
+47 Norm: mean and centering
+   helpers.py L12-16; companion transformer_steps.py L14-15.
+48 Norm: scale and bias
+   helpers.py L24-25; companion transformer_steps.py L18.
+49 Norm: variance and scaling
+   helpers.py L18-22; companion transformer_steps.py L16-17.
+50 Token arrays and parameters
+   image_encoder.py L12-18, L56-64, L84-91: stored parameter arrays and shapes.
+51 Same structure, separate parameters
+   image_encoder.py L57-58, L87-90: separate Norm/block parameter instances.
+   helpers.py L5-25: the shared LayerNorm calculation.
+
+TRANSFORMER CALCULATIONS
+52 Transformer block
+   image_encoder.py L66-79: attention update, Norm 2 and TODO-04 residual/MLP.
+53 QKV projection
+   image_encoder.py L30-32; companion transformer_steps.py L52.
+54 Split the combined QKV array
+   image_encoder.py L33-35; companion transformer_steps.py L53-55.
+   The assessed code slices and calls split_heads in each expression.
+55 Attention array organization
+   image_encoder.py L20-28: split_heads / TODO-02.
+56 K: transpose the final two axes
+   image_encoder.py L37-39: TODO-03a; companion transformer_steps.py L58.
+   The companion k is 2D; real k is 4D and swaps only its final two axes.
+57 All query-key scores
+   image_encoder.py L37-44: TODO-03a and supplied coefficient conversion.
+   Companion transformer_steps.py L58.
+58 Attention: matrix mixing
+   image_encoder.py L44-48: coefficients and TODO-03b weighted values.
+   Companion transformer_steps.py L59-60.
+59 Attention output projection
+   image_encoder.py L46-52: join head outputs and project / TODO-03b,03c.
+   Companion transformer_steps.py L61.
+60 First residual addition
+   image_encoder.py L70-71: TODO-04a; companion transformer_steps.py L64.
+61 Norm 2
+   image_encoder.py L73-74; companion transformer_steps.py L67-68.
+62 MLP: first linear layer
+   image_encoder.py L76-79: TODO-04b; companion transformer_steps.py L69.
+63 MLP: activation
+   image_encoder.py L64, L76-79: supplied GELU and TODO-04b.
+   helpers.py L27-43; companion transformer_steps.py L70.
+64 MLP: second linear layer
+   image_encoder.py L76-79: TODO-04b; companion transformer_steps.py L71.
+65 Second residual addition
+   image_encoder.py L76-79: TODO-04b; companion transformer_steps.py L72.
+66 A sequence of blocks
+   image_encoder.py L66-79: both residual formulas within each block.
+   image_encoder.py L117-122: supplied assembly and all 12 blocks.
+
+CLS AND OUTPUT HEAD
+67 CLS selection
+   image_encoder.py L124-131: TODO-06, select tokens[:,0,:], [B,N,D] to [B,D].
+68 CLS post-Norm
+   image_encoder.py L90, L128-131: apply the separate supplied post_norm.
+   helpers.py L10-25: same feature-axis Norm calculation, now on [B,D].
+69 Output projection
+   image_encoder.py L91, L128-131: projection [D,D_out], already [in,out].
+70 Unit-length output
+   image_encoder.py L133: supplied final helper call.
+   helpers.py L60-63: scale along the final axis, independently for each image.
+
+ASSIGNMENT AND VALIDATION
+71 Complete image encoder
+   image_encoder.py L93-133: patches, input tokens, blocks and final output.
+   run.py L15-24: image input/output contract and saved output tokens.
+72 Six implementation tasks
+   image_encoder.py: TODO-01 L93-102; TODO-02 L20-28; TODO-03 L37-52;
+   TODO-04 L66-79; TODO-05 L104-115; TODO-06 L124-133.
+   README.md / Quick start and Follow the lecture's calculation: classroom
+   files, installation, initial checks and python transformer_steps.py.
+73 Numerical checks
+   check.py L7: stage names; L51-65: shapes, float32, finite values and tolerances.
+   check.py L83-106: stage targets, reordered/duplicate batch and check results.
+   Run stages in order; debug the first mismatch before later stages.
+
+FINAL-PROJECT CONNECTION
+74 Reuse in the final project
+   README.md / Reuse in the final project and the separate final-project attachment.
+   Copy completed image_encoder.py and supplied helpers.py to the canonical
+   final student directory. Keep the final full image/text checkpoint.
+75 Text token lookup
+   The slide's dictionary/table is an illustrative lookup example.
+   Canonical final text_encoder.py L16-22: token IDs select rows, then positions
+   are added. Its weights and tokenizer come from the final project.
+76 Shared Transformer code
+   image_encoder.py L7, L55-79: exported LayerNorm and shared TransformerBlock.
+   image_encoder.py L30, L41-44: optional causal switch for the text path.
+   Canonical final text_encoder.py L2, L5-14, L24-55: separate text parameters,
+   Transformer calls, EOT output selection and final text output.
+
+Canonical final text_encoder.py references identify the separately distributed
+final-project student attachment; they do not require a local course-root path. Image and text share class APIs, but use their own parameter arrays
+and input/output logic. Changing config alone does not create another model.

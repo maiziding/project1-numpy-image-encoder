@@ -1,0 +1,55 @@
+array offset: [ 0.90 -0.50  0.80]
+uniform(-1,1): [[ 0.25  0.79  0.55]
+ [-0.55 -0.40  0.75]]
+zeros: [[0.00 0.00 0.00]
+ [0.00 0.00 0.00]]
+ones: [[1.00 1.00 1.00]
+ [1.00 1.00 1.00]]
+linspace: [-0.80 -0.40  0.00  0.40  0.80]
+normal: [[ 0.06  1.34 -0.49]
+ [-0.62  0.49  0.36]]
+scalar shape: () ndim: 0 size: 1
+sequence shape: (6,) ndim: 1 size: 6
+grid shape: (2, 3) ndim: 2 size: 6
+CHW image shape: (3, 2, 3) ndim: 3 size: 18
+BCHW batch shape: (2, 3, 2, 3) ndim: 4 size: 36
+BTCHW video batch shape: (2, 3, 3, 2, 2) ndim: 5 size: 72
+normalized image[0,0,0]: 0.25
+row 1: [-0.40 -0.50  0.90]
+column range: [[-0.60  0.70]
+ [-0.50  0.90]]
+new row axis: (1, 3)
+reshape: [[ 0.80 -0.60]
+ [ 0.70 -0.40]
+ [-0.50  0.90]]
+transpose: [[ 0.80 -0.40]
+ [-0.60 -0.50]
+ [ 0.70  0.90]]
+flat, row, column: (3,) (1, 3) (3, 1)
+mask: [ True False  True False False  True] selected: [0.80 0.70 0.90]
+vectorized rule: [ 0.50 -0.20  0.45]
+absolute values: [0.80 0.60 0.70] squares: [0.64 0.36 0.49]
+products: [-0.32  0.30  0.63]
+dot: 0.61
+W: [[-0.10  0.30]
+ [ 0.20 -0.50]
+ [-0.80  0.10]]
+vector @ matrix: [-0.76  0.61]
+matrix @ matrix: [[-0.76  0.61]
+ [-0.78  0.22]]
+2D elementwise: [[ 0.16  0.18]
+ [-0.28 -0.45]] 2D matrix product: [[-0.26 -0.78]
+ [-0.43 -0.33]]
+C-order sequence: [ 0.80 -0.60  0.70 -0.40 -0.50  0.90]
+sum axis 0: [ 0.40 -1.10  1.60] sum axis 1: [0.90 0.00]
+row offsets: [[ 0.90 -0.80  1.00]
+ [-0.30 -0.70  1.20]]
+column offsets: [[ 0.90 -0.50  0.80]
+ [-0.60 -0.70  0.70]]
+row means: [[0.30]
+ [0.00]] centered rows: [[ 0.50 -0.90  0.40]
+ [-0.40 -0.50  0.90]]
+CHW reduction axis 0 shape: (2, 3)
+CHW reduction axis 1 shape: (3, 3)
+CHW reduction axis 2 shape: (3, 2)
+All signed array examples passed.

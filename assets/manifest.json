@@ -1,0 +1,6 @@
+{
+  "reference_sha256": "ef07334da5d2b1f2f0f1e118c7ad34e2e68a69b9ad9bdf9be505492e12ae3f71",
+  "reference_origin": "Independent Torch functional FP32, cross-checked with final project teacher image_embeddings",
+  "primary_output": "output_tokens [10,512]",
+  "intermediate_tokens": "last_tokens [10,50,768]"
+}

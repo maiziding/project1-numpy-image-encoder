@@ -1,0 +1,30 @@
+{
+  "model": "OpenCLIP ViT-B-32",
+  "variant": "course_finetuned",
+  "image_size": 224,
+  "patch_size": 32,
+  "channels": 3,
+  "width": 768,
+  "heads": 12,
+  "head_dim": 64,
+  "layers": 12,
+  "mlp_width": 3072,
+  "token_count": 50,
+  "output_dim": 512,
+  "activation": "GELU_erf",
+  "norm_eps": 1e-05,
+  "dtype": "float32",
+  "mean": [
+    0.48145466,
+    0.4578275,
+    0.40821073
+  ],
+  "std": [
+    0.26862954,
+    0.26130258,
+    0.27577711
+  ],
+  "linear_weight_layout": "out_in",
+  "output_projection_layout": "in_out",
+  "weights": "weights/image_encoder.npz"
+}

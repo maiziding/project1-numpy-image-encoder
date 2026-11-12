@@ -1,0 +1,417 @@
+{
+  "project": "P1 NumPy image encoder",
+  "edition": "student",
+  "lecture_slides": 76,
+  "model": "OpenCLIP ViT-B-32",
+  "files": [
+    {
+      "path": "PPT-CODE-MAP.txt",
+      "bytes": 7383,
+      "sha256": "1030da0f8c48ec2de5ebf5603b85863eed73f5ce251a2ad0bac950087fb54d2a",
+      "provenance": {
+        "source": "week8-15（进阶项目）/2026-Advanced-Projects/project1-numpy/PPT-CODE-MAP.txt",
+        "source_sha256": "9338ae959e0686ada39b06767833a968d8b7cc54ce255fb2680a7d3011cb7701",
+        "action": "copy"
+      },
+      "intentional_change": "Adapt classroom and final-handover references to portable attachment layout; retain 77-slide mapping. Update to the user-edited 76-slide deck: assignment/checks 71-73; final connection 74-76; no separate assessment slide."
+    },
+    {
+      "path": "README.md",
+      "bytes": 8430,
+      "sha256": "b27b4b084895a1065d146470de3f0a86e2070c05ce05fb30b8e6b3c04c2ff0f3",
+      "provenance": {
+        "source": "week8-15（进阶项目）/2026-Advanced-Projects/project1-numpy/README.md",
+        "source_sha256": "5cd82ea88a297ff24f1f24de1d8c1da50b1225e94f8b13b29d901969e15484d9",
+        "action": "copy"
+      },
+      "intentional_change": "Add portable attachment layout and demo/practice references; identify assistant completion when applicable. Update to the user-edited 76-slide deck: assignment/checks 71-73; final connection 74-76; no separate assessment slide."
+    },
+    {
+      "path": "assets/images.json",
+      "bytes": 5521,
+      "sha256": "8f28cfbef27e13f27a6003b8b9d6b281e1b99ba43b08dcdfeff0501bdd78d83b",
+      "provenance": {
+        "source": "week8-15（进阶项目）/2026-Advanced-Projects/project1-numpy/assets/images.json",
+        "source_sha256": "8f28cfbef27e13f27a6003b8b9d6b281e1b99ba43b08dcdfeff0501bdd78d83b",
+        "action": "copy"
+      }
+    },
+    {
+      "path": "assets/images/image_01.jpg",
+      "bytes": 26454,
+      "sha256": "bedc80b5c33450fd652e3d07c800d7c4426255225129da480433cdf996b6740e",
+      "provenance": {
+        "source": "week8-15（进阶项目）/2026-Advanced-Projects/project1-numpy/assets/images/image_01.jpg",
+        "source_sha256": "bedc80b5c33450fd652e3d07c800d7c4426255225129da480433cdf996b6740e",
+        "action": "copy"
+      }
+    },
+    {
+      "path": "assets/images/image_02.jpg",
+      "bytes": 39046,
+      "sha256": "6e9a326053b7907025a94a5874a7745e9aa6e90405ada71bc36e0a6b8a08627f",
+      "provenance": {
+        "source": "week8-15（进阶项目）/2026-Advanced-Projects/project1-numpy/assets/images/image_02.jpg",
+        "source_sha256": "6e9a326053b7907025a94a5874a7745e9aa6e90405ada71bc36e0a6b8a08627f",
+        "action": "copy"
+      }
+    },
+    {
+      "path": "assets/images/image_03.jpg",
+      "bytes": 32151,
+      "sha256": "ac91eaaf39383a07af3fc3086094c73714fcf68b4bef1183b47999567f1a5089",
+      "provenance": {
+        "source": "week8-15（进阶项目）/2026-Advanced-Projects/project1-numpy/assets/images/image_03.jpg",
+        "source_sha256": "ac91eaaf39383a07af3fc3086094c73714fcf68b4bef1183b47999567f1a5089",
+        "action": "copy"
+      }
+    },
+    {
+      "path": "assets/images/image_04.jpg",
+      "bytes": 42909,
+      "sha256": "20936cdd3deb7a673627f83898020841012aac46bf3a188a174f835d9ea7ead8",
+      "provenance": {
+        "source": "week8-15（进阶项目）/2026-Advanced-Projects/project1-numpy/assets/images/image_04.jpg",
+        "source_sha256": "20936cdd3deb7a673627f83898020841012aac46bf3a188a174f835d9ea7ead8",
+        "action": "copy"
+      }
+    },
+    {
+      "path": "assets/images/image_05.jpg",
+      "bytes": 39068,
+      "sha256": "dd1c00f16ea3d9ad6e2b9330a9b3442de84108b23d41a95126b416477c512e60",
+      "provenance": {
+        "source": "week8-15（进阶项目）/2026-Advanced-Projects/project1-numpy/assets/images/image_05.jpg",
+        "source_sha256": "dd1c00f16ea3d9ad6e2b9330a9b3442de84108b23d41a95126b416477c512e60",
+        "action": "copy"
+      }
+    },
+    {
+      "path": "assets/images/image_06.jpg",
+      "bytes": 35495,
+      "sha256": "7ff106a0a3c31a45af710de995a826f2f69aab1d55369035bbf4fe952ab72e24",
+      "provenance": {
+        "source": "week8-15（进阶项目）/2026-Advanced-Projects/project1-numpy/assets/images/image_06.jpg",
+        "source_sha256": "7ff106a0a3c31a45af710de995a826f2f69aab1d55369035bbf4fe952ab72e24",
+        "action": "copy"
+      }
+    },
+    {
+      "path": "assets/images/image_07.jpg",
+      "bytes": 37901,
+      "sha256": "874f58b8b0704ee63427b1daf46517229dde6190daeed9f1c8f7622a7ee7510b",
+      "provenance": {
+        "source": "week8-15（进阶项目）/2026-Advanced-Projects/project1-numpy/assets/images/image_07.jpg",
+        "source_sha256": "874f58b8b0704ee63427b1daf46517229dde6190daeed9f1c8f7622a7ee7510b",
+        "action": "copy"
+      }
+    },
+    {
+      "path": "assets/images/image_08.jpg",
+      "bytes": 53847,
+      "sha256": "5308f2e27e34a48fe880f655f39a32d6a70242b1c5bf2c91b35c75ca05810400",
+      "provenance": {
+        "source": "week8-15（进阶项目）/2026-Advanced-Projects/project1-numpy/assets/images/image_08.jpg",
+        "source_sha256": "5308f2e27e34a48fe880f655f39a32d6a70242b1c5bf2c91b35c75ca05810400",
+        "action": "copy"
+      }
+    },
+    {
+      "path": "assets/images/image_09.jpg",
+      "bytes": 40100,
+      "sha256": "b6a247787521abf9295dce1b7c091a55e250e24a49f438f9358458237466f121",
+      "provenance": {
+        "source": "week8-15（进阶项目）/2026-Advanced-Projects/project1-numpy/assets/images/image_09.jpg",
+        "source_sha256": "b6a247787521abf9295dce1b7c091a55e250e24a49f438f9358458237466f121",
+        "action": "copy"
+      }
+    },
+    {
+      "path": "assets/images/image_10.jpg",
+      "bytes": 53160,
+      "sha256": "15c3c2210b61973f77a0e8095d30876193715500ce79a54b6bef9a5e8a1756f2",
+      "provenance": {
+        "source": "week8-15（进阶项目）/2026-Advanced-Projects/project1-numpy/assets/images/image_10.jpg",
+        "source_sha256": "15c3c2210b61973f77a0e8095d30876193715500ce79a54b6bef9a5e8a1756f2",
+        "action": "copy"
+      }
+    },
+    {
+      "path": "assets/manifest.json",
+      "bytes": 309,
+      "sha256": "3349b34849f4722f24457168e835245db0a66784f0f54ffcf97dd88cf4a39eed",
+      "provenance": {
+        "source": "week8-15（进阶项目）/2026-Advanced-Projects/project1-numpy/assets/manifest.json",
+        "source_sha256": "3349b34849f4722f24457168e835245db0a66784f0f54ffcf97dd88cf4a39eed",
+        "action": "copy"
+      }
+    },
+    {
+      "path": "assets/reference_outputs.npz",
+      "bytes": 7655354,
+      "sha256": "ef07334da5d2b1f2f0f1e118c7ad34e2e68a69b9ad9bdf9be505492e12ae3f71",
+      "provenance": {
+        "source": "week8-15（进阶项目）/2026-Advanced-Projects/project1-numpy/assets/reference_outputs.npz",
+        "source_sha256": "ef07334da5d2b1f2f0f1e118c7ad34e2e68a69b9ad9bdf9be505492e12ae3f71",
+        "action": "copy"
+      }
+    },
+    {
+      "path": "check.py",
+      "bytes": 5339,
+      "sha256": "2a36ac62a41feea9590a63ea203d3afd02ffccd83ed3d39aada90c37e7b97f8c",
+      "provenance": {
+        "source": "week8-15（进阶项目）/2026-Advanced-Projects/project1-numpy/check.py",
+        "source_sha256": "2a36ac62a41feea9590a63ea203d3afd02ffccd83ed3d39aada90c37e7b97f8c",
+        "action": "copy"
+      }
+    },
+    {
+      "path": "config.json",
+      "bytes": 569,
+      "sha256": "b86c2d0e0c9d88d4ccabc0834fcadb10dfae3defa3eb3fc5ad35748e7fbf78ec",
+      "provenance": {
+        "source": "week8-15（进阶项目）/2026-Advanced-Projects/project1-numpy/config.json",
+        "source_sha256": "b86c2d0e0c9d88d4ccabc0834fcadb10dfae3defa3eb3fc5ad35748e7fbf78ec",
+        "action": "copy"
+      }
+    },
+    {
+      "path": "helpers.py",
+      "bytes": 2417,
+      "sha256": "237f547291b6b99c673ede697a5430f92c450d70dec3d43eab5959977a313e38",
+      "provenance": {
+        "source": "week8-15（进阶项目）/2026-Advanced-Projects/project1-numpy/helpers.py",
+        "source_sha256": "237f547291b6b99c673ede697a5430f92c450d70dec3d43eab5959977a313e38",
+        "action": "copy"
+      }
+    },
+    {
+      "path": "image_encoder.py",
+      "bytes": 6296,
+      "sha256": "e1bc69c6527a11d35c278da5c79d76875cf6cc1b846a284bbfd57074e6bf7eed",
+      "provenance": {
+        "source": "week8-15（进阶项目）/2026-Advanced-Projects/project1-numpy/image_encoder.py",
+        "source_sha256": "e1bc69c6527a11d35c278da5c79d76875cf6cc1b846a284bbfd57074e6bf7eed",
+        "action": "copy"
+      }
+    },
+    {
+      "path": "lecture-demos/01_numpy_basics.py",
+      "bytes": 3496,
+      "sha256": "350153a761b3b41033bc53bc1dd4f7df56ddc997b66dd5f85d505e9b5e3377eb",
+      "provenance": {
+        "source": "week8-15（进阶项目）/2026-Advanced-Projects/lecture-demos/01_numpy_basics.py",
+        "source_sha256": "350153a761b3b41033bc53bc1dd4f7df56ddc997b66dd5f85d505e9b5e3377eb",
+        "action": "copy"
+      }
+    },
+    {
+      "path": "lecture-demos/02_imageio_images.py",
+      "bytes": 3524,
+      "sha256": "91888f9693ae72037701e798b17cf4a8c8069104cd27f47c60fb7473b10e8a6c",
+      "provenance": {
+        "source": "week8-15（进阶项目）/2026-Advanced-Projects/lecture-demos/02_imageio_images.py",
+        "source_sha256": "91888f9693ae72037701e798b17cf4a8c8069104cd27f47c60fb7473b10e8a6c",
+        "action": "copy"
+      }
+    },
+    {
+      "path": "lecture-demos/03_forward_tokens.py",
+      "bytes": 3358,
+      "sha256": "dd6e37564bdcfe7b9a37300844176fef375f35946bf8a79ecbbc79be3eecc1c5",
+      "provenance": {
+        "source": "week8-15（进阶项目）/2026-Advanced-Projects/lecture-demos/03_forward_tokens.py",
+        "source_sha256": "dd6e37564bdcfe7b9a37300844176fef375f35946bf8a79ecbbc79be3eecc1c5",
+        "action": "copy"
+      }
+    },
+    {
+      "path": "lecture-demos/04_join_arrays.py",
+      "bytes": 1800,
+      "sha256": "f646c7dd17adc5d176a014877472dcc7422fe02dfae29429ae144f176467d510",
+      "provenance": {
+        "source": "week8-15（进阶项目）/2026-Advanced-Projects/lecture-demos/04_join_arrays.py",
+        "source_sha256": "f646c7dd17adc5d176a014877472dcc7422fe02dfae29429ae144f176467d510",
+        "action": "copy"
+      }
+    },
+    {
+      "path": "lecture-demos/README.txt",
+      "bytes": 1186,
+      "sha256": "1b8be7662ea19b84cf6cc424c20e7b52830a17886875e7da6634b194fb5e46b1",
+      "provenance": {
+        "action": "created_for_packaging"
+      },
+      "intentional_change": "NumPy-only classroom instructions; remove unrelated Matplotlib/Web and stale slide references."
+    },
+    {
+      "path": "lecture-demos/SOURCES.txt",
+      "bytes": 441,
+      "sha256": "5949e62f37a74d250c23b89fe94c67a0f03ab40d541ba514a3a900edb5772f99",
+      "provenance": {
+        "action": "created_for_packaging"
+      },
+      "intentional_change": "Retain source credits for included classroom image and NumPy examples."
+    },
+    {
+      "path": "lecture-demos/expected-outputs/01_numpy_basics.txt",
+      "bytes": 1685,
+      "sha256": "ea943180005da8ca93fc4588e1150cb40801aff7c0d36f911288c06fbbaa7c4c",
+      "provenance": {
+        "source": "week8-15（进阶项目）/2026-Advanced-Projects/lecture-demos/expected-outputs/01_numpy_basics.txt",
+        "source_sha256": "ea943180005da8ca93fc4588e1150cb40801aff7c0d36f911288c06fbbaa7c4c",
+        "action": "copy"
+      },
+      "intentional_change": "Regenerate after successful offline classroom execution; replace machine-local output directory with relative lecture-demos path."
+    },
+    {
+      "path": "lecture-demos/expected-outputs/02_imageio_images.txt",
+      "bytes": 396,
+      "sha256": "144f34565bc8fe30ae41b0f5e26a4824f7af73c3dfce608e202d9b5dfb63231e",
+      "provenance": {
+        "source": "week8-15（进阶项目）/2026-Advanced-Projects/lecture-demos/expected-outputs/02_imageio_images.txt",
+        "source_sha256": "3e03319bfdf1baad47653a53cff5c2efc4e0676df3d5349279a826163710c6a0",
+        "action": "copy"
+      },
+      "intentional_change": "Regenerate after successful offline classroom execution; replace machine-local output directory with relative lecture-demos path."
+    },
+    {
+      "path": "lecture-demos/expected-outputs/03_forward_tokens.txt",
+      "bytes": 1109,
+      "sha256": "6f84307070ec1d2ec4be7f91809023c5d70941b4e6a33040c050f03a6a1f3cfe",
+      "provenance": {
+        "source": "week8-15（进阶项目）/2026-Advanced-Projects/lecture-demos/expected-outputs/03_forward_tokens.txt",
+        "source_sha256": "6f84307070ec1d2ec4be7f91809023c5d70941b4e6a33040c050f03a6a1f3cfe",
+        "action": "copy"
+      },
+      "intentional_change": "Regenerate after successful offline classroom execution; replace machine-local output directory with relative lecture-demos path."
+    },
+    {
+      "path": "lecture-demos/expected-outputs/04_join_arrays.txt",
+      "bytes": 414,
+      "sha256": "60b8d65005a57e29fc43df9420a84e39b25056f1739cd18da7316d6484fd6126",
+      "provenance": {
+        "source": "week8-15（进阶项目）/2026-Advanced-Projects/lecture-demos/expected-outputs/04_join_arrays.txt",
+        "source_sha256": "60b8d65005a57e29fc43df9420a84e39b25056f1739cd18da7316d6484fd6126",
+        "action": "copy"
+      },
+      "intentional_change": "Regenerate after successful offline classroom execution; replace machine-local output directory with relative lecture-demos path."
+    },
+    {
+      "path": "lecture-demos/expected-outputs/patch_trace.txt",
+      "bytes": 422,
+      "sha256": "57a9523c41d87e1f06a318bcc2a51c64b9c0c44533aba12d2e478fa03f48ac29",
+      "provenance": {
+        "source": "week8-15（进阶项目）/2026-Advanced-Projects/lecture-demos/expected-outputs/patch_trace.txt",
+        "source_sha256": "d82172b340074dce760c722f322e671bfb6fc3d3cc34a28d215b3035ecb02682",
+        "action": "copy"
+      },
+      "intentional_change": "Regenerate after successful offline classroom execution; replace machine-local output directory with relative lecture-demos path."
+    },
+    {
+      "path": "lecture-demos/images/uw_cat.png",
+      "bytes": 60637,
+      "sha256": "85e48b1caaa67840ad073d6735377b0e075f01e09938b21603a2a6fabe7a1c8e",
+      "provenance": {
+        "source": "week8-15（进阶项目）/2026-Advanced-Projects/lecture-demos/images/uw_cat.png",
+        "source_sha256": "85e48b1caaa67840ad073d6735377b0e075f01e09938b21603a2a6fabe7a1c8e",
+        "action": "copy"
+      }
+    },
+    {
+      "path": "lecture-demos/patch_trace.py",
+      "bytes": 1904,
+      "sha256": "10adcd5549364f0b317ceeb624f66f54d84d404ca1ba94bb98fa71b9b73f103f",
+      "provenance": {
+        "source": "week8-15（进阶项目）/2026-Advanced-Projects/lecture-demos/patch_trace.py",
+        "source_sha256": "1232863700a0c02cff765b99b06dcd7108acf875a217adc57b45d5b5ad962e6b",
+        "action": "copy"
+      },
+      "intentional_change": "Make project reference local and align final CLS/post-Norm order with current lecture."
+    },
+    {
+      "path": "practice/project1_exercises.pdf",
+      "bytes": 198411,
+      "sha256": "5721f4500a18db91b795136bf31c46f85b838abea7e77257a077ea1a14f93984",
+      "provenance": {
+        "source": "week8-15（进阶项目）/实验课作业/project1_exercises.pdf",
+        "source_sha256": "5721f4500a18db91b795136bf31c46f85b838abea7e77257a077ea1a14f93984",
+        "action": "copy"
+      }
+    },
+    {
+      "path": "preprocess_image.py",
+      "bytes": 1790,
+      "sha256": "b22be1e08e1eefba7a60be1c61ecf343fb8291da2188a455159833bb7a50ae36",
+      "provenance": {
+        "source": "week8-15（进阶项目）/2026-Advanced-Projects/project1-numpy/preprocess_image.py",
+        "source_sha256": "b22be1e08e1eefba7a60be1c61ecf343fb8291da2188a455159833bb7a50ae36",
+        "action": "copy"
+      }
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 48,
+      "sha256": "01aacb5bdba55f9106f24677b5a8339255f6d4255913e4db27621aa3d4762561",
+      "provenance": {
+        "source": "week8-15（进阶项目）/2026-Advanced-Projects/project1-numpy/requirements.txt",
+        "source_sha256": "860ce10c91ff33acccae9f35aff572d597dae7b57ed8365f048bd1283dd08336",
+        "action": "copy"
+      },
+      "intentional_change": "Include imageio needed by packaged image demo; keep NumPy/Pillow constraints."
+    },
+    {
+      "path": "run.py",
+      "bytes": 1270,
+      "sha256": "953078de368c549f6aba448c9189913184634138d1c22116c370fa9c391a63c1",
+      "provenance": {
+        "source": "week8-15（进阶项目）/2026-Advanced-Projects/project1-numpy/run.py",
+        "source_sha256": "953078de368c549f6aba448c9189913184634138d1c22116c370fa9c391a63c1",
+        "action": "copy"
+      }
+    },
+    {
+      "path": "runtime.py",
+      "bytes": 778,
+      "sha256": "b5b58a2f7b8584c32d68cb516616a9ef349af2c0fe2a54a89bcd0e3c82e4141f",
+      "provenance": {
+        "source": "week8-15（进阶项目）/2026-Advanced-Projects/project1-numpy/runtime.py",
+        "source_sha256": "b5b58a2f7b8584c32d68cb516616a9ef349af2c0fe2a54a89bcd0e3c82e4141f",
+        "action": "copy"
+      }
+    },
+    {
+      "path": "transformer_steps.py",
+      "bytes": 4250,
+      "sha256": "83fb5558a2904704de2f13c5efc47b15fb05beb24267a6bc12320dac4ccba1f8",
+      "provenance": {
+        "source": "week8-15（进阶项目）/2026-Advanced-Projects/project1-numpy/transformer_steps.py",
+        "source_sha256": "83fb5558a2904704de2f13c5efc47b15fb05beb24267a6bc12320dac4ccba1f8",
+        "action": "copy"
+      }
+    },
+    {
+      "path": "weights/image_encoder.npz",
+      "bytes": 326388585,
+      "sha256": "8567f805696fb37412e343de59dee7e677f35e77d6ef297fbdd6fa7b1923a740",
+      "provenance": {
+        "source": "week8-15（进阶项目）/2026-Advanced-Projects/project1-numpy/weights/image_encoder.npz",
+        "source_sha256": "8567f805696fb37412e343de59dee7e677f35e77d6ef297fbdd6fa7b1923a740",
+        "action": "symlink_file_for_private_build"
+      },
+      "build_symlink_source": "week8-15（进阶项目）/2026-Advanced-Projects/project1-numpy/weights/image_encoder.npz"
+    },
+    {
+      "path": "weights/manifest.json",
+      "bytes": 32823,
+      "sha256": "0c85a0439690d481140742ac92aeac355cd48b66b01437135a142a5a4bbd039f",
+      "provenance": {
+        "source": "week8-15（进阶项目）/2026-Advanced-Projects/project1-numpy/weights/manifest.json",
+        "source_sha256": "0c85a0439690d481140742ac92aeac355cd48b66b01437135a142a5a4bbd039f",
+        "action": "copy"
+      }
+    }
+  ],
+  "private_build_links_must_be_dereferenced_in_zip": true
+}
